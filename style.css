@@ -371,7 +371,7 @@ body {
     /*Hero Section Styles   */
     .hero-content {
         width: 500px;
-        gap: 30px;
+        /* gap: 30px; */
     }
     .hero__anchors {
         font-size: 1rem;
