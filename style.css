@@ -1,0 +1,361 @@
+:root {
+    --bg-orange: #F6B148;
+    --bg-dark: #141414;
+    --hero-hieght: 80vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-dark);
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #212121;
+}
+
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F6B148;
+    border-radius: 50px;
+}
+
+.hero {
+    background-image: url(/images/Network\ Sphere.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-orange);
+    padding-bottom: 2rem;
+    border-bottom-left-radius: 9950px;
+    border-bottom-right-radius: 9950px;
+    z-index: 99999;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-content__image {
+    width: 70px;
+    height: 70px;
+}
+
+.hero__anchors {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.hero__anchors--capitalize {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.hero__anchors--active {
+    position: relative;
+    /* border-bottom: 3px solid #000; */
+}
+
+.hero-content {
+    font-family: 'Gabriela', serif;
+    /* width: 30%; */
+    gap: 20px;
+}
+
+.hero-content__large--font {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+
+.hero-content__des {
+    letter-spacing: .2rem;
+    font-size: .9rem;
+    /* text-align: justify; */
+}
+
+.hero-content__btn {
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    background: #141414;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.hero-content__links {
+    color: #212121;
+    background-color: transparent;
+    font-size: larger;
+}
+
+.hero-content__anchor {
+    cursor: pointer;
+}
+
+.skills,
+.projects,
+.blog,
+.experience {
+    font-family: 'Gabriela', serif;
+    margin: 8rem 0;
+    text-align: center;
+    padding: 1rem 1rem;
+    color: #fff;
+}
+
+.skills__header,
+.projects__header,
+.blog__header,
+.footer__header,
+.experience__header {
+    color: var(--bg-orange);
+    margin-bottom: 2rem;
+}
+
+.skills__image {
+    width: 100%;
+}
+
+.skills__stacks,
+.skills__text {
+    line-height: 3rem;
+    font-size: large;
+}
+
+.projects__navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0rem;
+    font-size: small;
+}
+
+.projects__navigation--muted {
+    color: #848484;
+}
+
+.projects__navigation--muted:hover {
+    color: #F6B148;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid #F6B148;
+}
+
+.projects__content {
+    overflow: auto;
+}
+
+.projects__content::-webkit-scrollbar {
+    display: none;
+}
+
+.projects__image {
+    position: relative;
+    background-image: url(/images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects__image:hover>.projects__image__details {
+    background-blend-mode: overlay;
+    background-color: #1414147e;
+    opacity: 1;
+}
+
+.projects__image__details {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.projects__image__details__button {
+    background-color: transparent;
+    color: #fff;
+    font-size: medium;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+}
+
+.projects__content__image__container--flex {
+    display: flex;
+    /* flex-direction: column; */
+    width: 700px;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.projects__more {
+    text-align: center;
+}
+
+.project__more__button {
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    background: #F5EBC6;
+    color: #F6B148;
+    border-radius: 5px;
+}
+
+.blog__content--flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    overflow: auto;
+}
+
+.blog__content--flex::-webkit-scrollbar {
+    display: none;
+}
+
+.blog__content__card {
+    background-color: #212121;
+    padding: 1.5rem 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.blog__content__card__buttons button {
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    background: #F5EBC6;
+    color: #000;
+    border-radius: 4px;
+}
+
+.experience__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience__card__image {
+    width: 260px;
+    cursor: pointer;
+}
+
+.footer {
+    font-family: 'Gabriela', serif;
+    margin-top: 8rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    color: #fff;
+    background: #212121;
+}
+
+.footer__content--border {
+    border-bottom: 2px solid #141414;
+    padding: 3rem 0;
+}
+
+.footer__content__button {
+    background: #F6B148;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+@media(min-width: 768px) {
+    .navbar {
+        padding: 1rem 4rem;
+    }
+    .navbar-nav {
+        gap: 40px;
+    }
+    .hero {
+        height: 100%;
+    }
+    .hero-content {
+        font-family: 'Gabriela', serif;
+        width: 500px;
+        gap: 30px;
+    }
+    .hero-content__des {
+        font-size: 1rem;
+    }
+    .hero-content__large--font {
+        font-size: 2.6rem;
+        letter-spacing: .3rem;
+    }
+    .hero-content__btn {
+        padding: 1rem 2rem;
+    }
+    .hero__anchors--active {
+        position: relative;
+        border-bottom: 3px solid #000;
+    }
+    .skills__image {
+        width: auto;
+    }
+    .skills__header,
+    .projects__header {
+        font-size: x-large;
+    }
+    .skills__stacks {
+        line-height: 3rem;
+        font-size: larger;
+    }
+    .nav-pills .nav-link {
+        border-radius: 0rem;
+        font-size: large;
+    }
+    .projects__content__image__container--flex {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .experience__card {
+        flex-direction: row;
+        gap: 20px;
+        margin: 2rem 0;
+    }
+    .experience__card__image {
+        width: 70%;
+        cursor: pointer;
+    }
+}
