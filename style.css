@@ -29,7 +29,7 @@ body {
     width: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background-color: var(--bg-orange);
     border-radius: 50px;
 }
@@ -66,6 +66,21 @@ body {
 
 .navbar-nav {
     gap: 10px;
+}
+
+@supports not (gap: 10px) {
+    .hero-content>* {
+        margin-bottom: 10px;
+    }
+    .gap-2>* {
+        margin-right: 2rem;
+    }
+}
+
+@supports not (gap: 20px) {
+    .experience__card>* {
+        margin-bottom: 20px;
+    }
 }
 
 .nav__logo {
@@ -143,6 +158,10 @@ body {
 .experience__header {
     color: var(--bg-orange);
     margin-bottom: 2rem;
+}
+
+.footer__header {
+    font-size: x-large;
 }
 
 .skills__image {
@@ -334,6 +353,11 @@ body {
     }
     .navbar-nav {
         gap: 40px;
+    }
+    @supports not (gap: 10px) {
+        .hero-content>* {
+            margin-bottom: 40px;
+        }
     }
     .hero {
         height: 100%;
