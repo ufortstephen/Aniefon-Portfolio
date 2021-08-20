@@ -48,6 +48,8 @@ body {
     padding-bottom: 2rem;
 }
 
+.hero-content {}
+
 .hero-content__image {
     width: 70px;
     height: 70px;
@@ -66,21 +68,6 @@ body {
 
 .navbar-nav {
     gap: 10px;
-}
-
-@supports not (gap: 10px) {
-    .hero-content>* {
-        margin-bottom: 10px !important;
-    }
-    .gap-2>* {
-        margin-right: 2rem !important;
-    }
-}
-
-@supports not (gap: 20px) {
-    .experience__card>* {
-        margin-bottom: 20px !important;
-    }
 }
 
 .nav__logo {
@@ -106,6 +93,17 @@ body {
     font-family: 'Gabriela', serif;
     gap: 20px;
     padding: 0 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+@supports not (gap: 20px) {
+    .hero-content>* {
+        margin-bottom: 20px !important;
+        /* border: 2px solid red; */
+    }
 }
 
 .hero-content__large--font {
@@ -257,10 +255,13 @@ body {
 .projects__content__image__container--flex {
     display: flex;
     width: 700px;
+    gap: 2rem;
 }
 
-.gap-2 {
-    gap: 2rem;
+@supports not (gap:2rem) {
+    .projects__image {
+        margin-right: 10px !important;
+    }
 }
 
 .projects__more {
@@ -354,7 +355,7 @@ body {
     .navbar-nav {
         gap: 40px;
     }
-    @supports not (gap: 10px) {
+    @supports not (gap: 40px) {
         .hero-content>* {
             margin-bottom: 40px !important;
         }
