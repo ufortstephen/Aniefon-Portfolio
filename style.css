@@ -48,8 +48,6 @@ body {
     padding-bottom: 2rem;
 }
 
-.hero-content {}
-
 .hero-content__image {
     width: 70px;
     height: 70px;
@@ -91,19 +89,17 @@ body {
 
 .hero-content {
     font-family: 'Gabriela', serif;
-    gap: 20px;
+    /* gap: 20px; */
     padding: 0 1rem;
+}
+
+.hero-content>* {
+    margin-bottom: 20px !important;
+    /* border: 2px solid red; */
 }
 
 .gap-2 {
     gap: 2rem;
-}
-
-@supports not (gap: 20px) {
-    .hero-content>* {
-        margin-bottom: 20px !important;
-        /* border: 2px solid red; */
-    }
 }
 
 .hero-content__large--font {
@@ -255,7 +251,11 @@ body {
 .projects__content__image__container--flex {
     display: flex;
     width: 700px;
-    gap: 2rem;
+    /* gap: 2rem; */
+}
+
+.projects__image {
+    margin-right: 20px !important;
 }
 
 @supports not (gap:2rem) {
@@ -313,7 +313,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
+}
+
+.experience__card>* {
+    margin-bottom: 1rem;
 }
 
 .experience__card__image {
@@ -354,11 +358,6 @@ body {
     }
     .navbar-nav {
         gap: 40px;
-    }
-    @supports not (gap: 40px) {
-        .hero-content>* {
-            margin-bottom: 40px !important;
-        }
     }
     .hero {
         height: 100%;
@@ -427,5 +426,21 @@ body {
     .experience__card__image {
         width: 70%;
         cursor: pointer;
+    }
+}
+
+
+/* SUPPORTS */
+
+@supports not (gap: 20px) {
+    .hero-content>* {
+        margin-bottom: 20px !important;
+        border: 2px solid red;
+    }
+}
+
+@supports not (gap: 40px) {
+    .hero-content>* {
+        margin-bottom: 40px !important;
     }
 }
